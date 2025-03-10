@@ -1,9 +1,5 @@
-
-#program to convert time in sec to HH:MM:SS format
-time=input("Enter time in seconds")
-time=int(time)
-timeinmin=time//60
-timeinsec=time%60
-timeinhr=timeinmin//60
-timeinmin=timeinmin%60
-print("HH:MM::SS----{}:{}:{}".format(timeinhr,timeinmin,timeinsec))
+time = int(input("Enter the time:"))
+timeinhr = time%60
+timeinmint = timeinhr//60
+timeinsec = timeinmint%60
+print(f"your time in HH:MM:SS {timeinhr}:{timeinmint}:{timeinsec}")
